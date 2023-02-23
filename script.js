@@ -29,6 +29,7 @@ function display() {
   tbody.innerHTML = nwarr.join(" ");
 }
 
+let del = document.querySelectorAll(".delete");
 function deleteRow(r) {
   r.parentElement.remove();
 }
