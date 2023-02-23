@@ -1,11 +1,54 @@
-/*  your css code here. If applicable */
-table{
-	width:100%;
-border-collapse: collapse;
-	
+table {
+  width: 80%;
+  border-collapse: collapse;
 }
-th,td{
-	border:1px solid black;
+th,
+td {
+  border: 1px solid #2c2b2b;
+}
+.delete {
+  background-color: #a10606;
+  color: #fff;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+h1 span {
+  color: rgb(10, 87, 154);
+}
+input {
+  padding: 0.3rem 0.7rem;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #2c2b2b;
+  width: 20%;
+}
+.input {
+  width: 100%;
 
-	
+  text-align: center;
+}
+.btn {
+  text-align: center;
+  margin: 1rem 0;
+}
+button {
+  padding: 0.5rem 4rem;
+  background: #1a39e1;
+  color: #fff;
+  font-size: 1.3rem;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form-group button {
+}
+
+tbody tr:nth-child(odd) {
+  background: #ccc;
+}
+tbody tr:hover {
+  background: #ccc;
+  transition: 0.3s all;
 }

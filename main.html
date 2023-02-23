@@ -3,39 +3,41 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<h1>MyBookList</h1
-	<div class="form-group"></div>
-	<input type="text" id="title">
-	<input type="text" id="author">
-	<input type="text" id="isbn">
-	<Button id="submit">submit</Button>
-	<table class="table">
-		
-		<thead>
-			<tr>
-				<th>Title</th>
-				<th>Author</th>
-				<th>ISBN#</th>
-			</tr>
-		</thead>
-		<tbody id="book-list">
-			<tr>
-				<td>Title</td>
-				<td>Title</td>
-				<td>Title</td>	
-				<td class="delete">Del</td>
-			</tr>
-				
-		</tbody>
-	</table>
-	
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+    <!-- the entire body must be written by student -->
+    <h1>My<span>Book</span>List</h1>
+    <div class="form-group">
+        <div class="input">
+            <input type="text" id="title" placeholder="Enter book name">
+            <input type="text" id="author" placeholder="Enter author">
+            <input type="text" id="isbn" placeholder="Enter isbn">
+        </div>
+        <div class="btn">
+            <Button id="submit">submit</Button>
+        </div>
+
+    </div>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+
+
+        </tbody>
+    </table>
     <script type="text/javascript" src="./script.js">
-</script>
+    </script>
 
 </body>
 
