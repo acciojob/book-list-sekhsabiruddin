@@ -2,6 +2,7 @@
 
 let tbody = document.getElementById("book-list");
 let submit = document.getElementById("submit");
+
 let obj = {};
 let arr = [];
 
@@ -23,13 +24,17 @@ function display() {
     <td>${val.title}</td>
     <td>${val.author}</td>
     <td>${val.isbn}</td>
-    <td class="delete" onclick="deleteRow(this)">Del</td>
+    <td class="delete" onclick="deletRow()">Del</td>
 </tr>`;
   });
   tbody.innerHTML = nwarr.join(" ");
 }
 
-let del = document.querySelectorAll(".delete");
-function deleteRow(r) {
-  r.parentElement.remove();
+function deletRow() {
+  let btn = document.querySelectorAll(".delete");
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("click", function () {
+      btn[i].parentElement.remove();
+    });
+  }
 }
