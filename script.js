@@ -24,7 +24,7 @@ function display() {
     <td>${val.title}</td>
     <td>${val.author}</td>
     <td>${val.isbn}</td>
-    <td><a href="#" class="delete" onclick="deletRow()">Del</a></td>
+    <td class="delete" onclick="deletRow()">Del</td>
 </tr>`;
   });
   tbody.innerHTML = nwarr.join(" ");
